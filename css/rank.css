@@ -1,0 +1,185 @@
+body{
+    background-image: url(../img/main-img.HEIC);
+    background-repeat: no-repeat;
+    border: 0;
+    padding: 0;
+    background-size: cover;
+
+}
+
+#mainNav {
+    /* background-color: #64a19d; */
+}
+
+.nav-item:hover {
+    background-color: #64a19d!important;
+}
+
+.login-img {
+    background-image: url('../assets/img_1_ori.HEIC');
+    max-height: 480px;
+    overflow: hidden;
+    width: 100%;
+    height: 480px;
+    position: relative;
+    align-items: center;
+}
+
+.inven-section {
+    margin-top: 200px;
+    
+}
+
+.inven {
+    width: 1300px;
+    max-width: 80%;
+    background-color: rgb(255, 252, 242,0.5);
+    border-radius: 40px;
+    /* box-shadow: 0px 11px 48px 0 rgba(0, 0, 0, 0.05); */
+    margin:0 auto;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+}
+
+.table{
+
+    max-width: 80%;
+    width: 700px;
+    font-size: 17px;
+    font-weight: 500;
+      
+}
+
+
+.inven-logo{
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    margin: 0 auto;
+    padding: 0;
+    
+    
+}
+
+img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+
+.inven-title{
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 21px;
+    margin-bottom: 21px;
+       
+}
+
+/*not used*/
+.inven-me-title{
+    border-radius: 40px;
+    background-color: rgba(235, 235, 235, 0.699);
+    position: relative;
+    margin:0 auto;  
+    width:300px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 21px;
+}
+
+.inven-me{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgb(255, 252, 234);
+    display: inline-block;
+    /*table line is no line*/
+    /* border: 3px solid rgba(128, 128, 128, 0.445); */
+    margin: 25px 25px 25px 25px;
+}
+
+
+.inven-item {
+    width: 250px;
+    height: 290px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0px 25px 0px 25px;
+}
+
+
+.rank-img{
+    text-align: center;
+    width: auto; height: auto;
+    max-width: 30px;
+    max-height: 30px
+}
+
+/* .login-pw input{
+    font-family: serif;
+} */
+
+input:focus::-webkit-input-placeholder { 
+    font-family: serif;
+    color: transparent; 
+} 
+
+input:focus::-moz-placeholder { 
+    font-family: serif;
+    color: transparent; 
+} 
+
+input:focus:-ms-input-placeholder { 
+    font-family: serif;
+    color: transparent; 
+} 
+
+input:focus::-ms-input-placeholder { 
+    font-family: serif;
+    color: transparent; 
+}
+
+/* form {
+    margin-top: 30px;
+    margin-left: 115px;
+} */
+
+@media (max-width : 768px) { 
+    .inven-logo, img {
+        width: 30%;
+        height: 30%;
+    }
+    table {
+        width: 90%
+    }
+    
+    body.background-image, .inven , .table {
+        width: 80%
+    }
+
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+
+    thead {
+        max-width: 80%;
+    }
+    .table {
+        font-size: 15px;
+    }
+
+    .inven-title {
+        font-size: 20px
+    }
+
+} 
