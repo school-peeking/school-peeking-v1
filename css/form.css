@@ -38,7 +38,7 @@ body {
     width: 600px;
     height: 500px;
     background-color: rgba(255, 254, 252, 0.877);
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 20px 20px 48px 0 rgba(0, 0, 0, 0.164); 
     margin:0 auto;
     position: relative;
@@ -142,20 +142,3 @@ table {
     margin-top: 45px;
 }
 
-.btn {
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
-}

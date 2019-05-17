@@ -13,17 +13,52 @@
     .cover-show {
         max-width: 400px
     }
+    footer {
+        max-height: 200px !important;
+        font-size: 5px !important;
+        padding: 6px;
+    }
+
 }
 
 @media (min-width:768px) {
     .cover-show {
         max-width: 500px
     }
+
+    .cover-show > div {
+        padding-bottom: 3rem;
+    }
+
+
+    footer {
+        max-height: 300px;
+        font-size: 2px !important;
+        padding: 15px;
+    }
+
+    .signup-section {
+        padding: 5rem 0;
+    }
+
 }
 
 @media (min-width:992px) {
     .cover-show {
         max-width: 700px
+    }
+
+    .cover-show > div {
+        padding-bottom: 5rem;
+    }
+
+    footer {
+        margin: 10px;
+        font-size: 10px;
+        padding: 17px;
+    }
+    .signup-section {
+        padding: 5rem 0;
     }
 }
 
