@@ -28,13 +28,18 @@ body {
     line-height: 2;
     height: 39px;
 }
+#name:hover, #email:hover, #pwd:hover {
+    border: 2px solid #008158;
+}
+
+
 
 .login {
     width: 600px;
     height: 500px;
-    background-color: rgba(255,255,255,0.5);
-    border-radius: 30px;
-    /* box-shadow: 0px 11px 48px 0 rgba(0, 0, 0, 0.05); */
+    background-color: rgba(255, 254, 252, 0.877);
+    border-radius: 10px;
+    box-shadow: 20px 20px 48px 0 rgba(0, 0, 0, 0.164); 
     margin:0 auto;
     position: relative;
     padding-top: 45px;
@@ -72,21 +77,26 @@ input{
     width: 300px;
     height: 55px;
     border-radius: 10px;
-    border: solid 3px #64a19d;
-    background-color: #fff;
+    border: solid 2px rgb(155, 155, 155);
+    background-color: rgba(224, 224, 224, 0.87);
     outline: none;
     padding-left: 20px;
     margin-left: 20px;
     margin-bottom: 10px;
+    display: inline-block;
+}
+
+td {
+    margin: auto !important;
 }
 
 .join {
-    width: 381px;
+    width: 281px;
     height: 64px;
-    border: none;
+    border: 2px solid #008158;
+    background-color: rgb(155, 155, 15,0.0);
     border-radius: 10px;
-    background-color: #64a19d;
-    color: #fff;
+    color: #008158;
     font-size: 20px;
     font-weight: 800;
     margin-top: 47px;
@@ -94,7 +104,12 @@ input{
     -webkit-appearance: none;
     padding: 0;
     margin-top: 30px;
-    margin-left: 115px;
+    margin-left: 164px;
+}
+
+.join:hover {
+    background-color: #008158;
+    color: #fff;
 }
 
 input:focus::-webkit-input-placeholder { 
@@ -125,4 +140,22 @@ input:focus::-ms-input-placeholder {
 table {
     margin-left: 100px;
     margin-top: 45px;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
