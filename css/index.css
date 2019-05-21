@@ -7,18 +7,58 @@
     margin-left: auto
     
 }
-
+ 
 
 @media (min-width:576px) {
-    .cover-show {
-        max-width: 400px
+    
+
+    .masthead {
+        padding-top: 40% !important;
+        padding-bottom: 10% !important;
     }
-    footer {
-        max-height: 200px !important;
-        font-size: 5px !important;
-        padding: 6px;
+    .masthead .btn {
+        padding: 1rem !important;
+        font-size: 1rem !important;
+    }
+    .about-section {
+        padding-top: 10%;
+    }
+    .about-section h2 {
+        font-size: 1.5rem !important;
+    }
+    .cover-show {
+        padding: 1rem !important    ;
+    }
+    #about ~ h2{
+        font-size: 1rem !important;
+    }
+    #about ~ p {
+        font-size: .5rem !important;
     }
 
+    .featured-text {
+        margin: .25rem !important;
+    }
+    .signup-section {
+        padding: 3rem 0;
+    }
+    .signup-section h2, .signup-section .btn {
+        font-size: 1rem;
+        padding: .8rem;
+    }
+    #signup h2 {
+        padding: 1rem !important;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+    footer div {
+        font-size: .9rem;
+    }
+    .main-title h1 {
+        font-size: 2rem !important;
+    }
 }
 
 @media (min-width:768px) {
@@ -40,6 +80,9 @@
     .signup-section {
         padding: 5rem 0;
     }
+    .about-section {
+        margin: 0 auto;
+    }
 
 }
 
@@ -60,10 +103,7 @@
     .signup-section {
         padding: 5rem 0;
     }
-}
-
-@media (min-width:1200px) {
-    .cover-show {
-        max-width: 1000px
+    .about-section {
+        margin: 0 auto;
     }
 }

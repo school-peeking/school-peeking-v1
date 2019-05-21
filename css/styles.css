@@ -59,6 +59,7 @@ body {
 }
 
 .about-section {
+    margin: 10px;
     background: linear-gradient(to bottom,#16161600 0,rgba(22, 22, 22, 0) 75%,rgba(22, 22, 22, 0) 100%);
 }
 
