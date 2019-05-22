@@ -62,14 +62,23 @@
 }
 
 @media (min-width:768px) {
-    .cover-show {
-        max-width: 500px
+
+    .cover-show h4, .cover-show p, .cover-show img{
+        padding: 3%;
+        margin-top: 5%;
+        
     }
 
-    .cover-show > div {
-        padding-bottom: 3rem;
+    .cover-show h4 {
+        font-size: 2rem;
     }
-
+    .cover-show p {
+        font-size: 1.6rem;
+    }
+    .masthead {
+        padding-top: 30% !important;
+        padding-bottom: 30% !important;
+    }
 
     footer {
         max-height: 300px;
@@ -83,16 +92,32 @@
     .about-section {
         margin: 0 auto;
     }
+    #signup h2 {
+        padding: 1rem !important;
+    }
 
+    .signup-section h2, .signup-section .btn {
+        font-size: 1.2rem;
+    }
 }
 
 @media (min-width:992px) {
+    
     .cover-show {
-        max-width: 700px
+        padding: 5% !important;  
     }
 
-    .cover-show > div {
-        padding-bottom: 5rem;
+    .cover-show h4, .cover-show p, .cover-show img{
+    
+        padding: 3%;
+        
+        
+    }
+    .cover-show h4 {
+        font-size: 1.6rem;
+    }
+    .cover-show p {
+        font-size: 1rem;
     }
 
     footer {
