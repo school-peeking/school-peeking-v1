@@ -6,11 +6,13 @@ body {
   background-size: cover;
 }
 .login-img {
+    max-height: 480px;
     background-image: url('../assets/img_1_ori.HEIC');
     overflow: hidden;
     width: 100%;
     position: relative;
     align-items: center;
+    height: 480px;
 }
 
 .login-section {
@@ -28,7 +30,7 @@ body {
 }
 
 .login {
-    
+    width: 579px;
     height: 460px;
     background-color: rgba(255, 254, 252, 0.877);
     border-radius: 30px;
@@ -51,22 +53,15 @@ body {
     margin-top: 19px;
 }
 
-.login-form {
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 1.28;
-    text-align: left;
-}
-
 .login-form label{
     margin-left: 110px;
 }
 
-/* .login-pw input{
+ .login-pw input{
     font-family: serif;
-} */
+} 
 
-/* .login-id input, .login-pw input{
+ .login-id input, .login-pw input{
     width: 381px;
     height: 55px;
     border-radius: 10px;
@@ -74,17 +69,11 @@ body {
     background-color: #fff;
     outline: none;
     padding-left: 20px;
+    margin-left: 99px;
+    text-align: center;
    
-} */
-input {
-    width: 381px;
-    height: 55px;
-    border-radius: 10px;
-    border: solid 2px rgb(155, 155, 155);
-    background-color: rgba(224, 224, 224, 0.87);
-    outline: none;
-    margin: 3%;
-}
+} 
+
 
 .login-id input:hover, .login-pw input:hover {
     border: solid 2px #008158;
@@ -105,6 +94,7 @@ input {
     outline: none;
     -webkit-appearance: none;
     padding: 0;
+    margin-left: 99px;
 }
 .login-btn:hover {
     background-color: #008158;
@@ -135,47 +125,16 @@ input:focus::-ms-input-placeholder {
 
 @media (min-width:576px) {
     
-    .login {
-        /* margin: 3rem !important; */
-        width: 100%;
-        
-    }
-    /* .login-id input, .login-pw input {
-        width: 70%;
-        margin-left: 15%;
-        
-    } */
+    
 }
 
 @media (min-width:768px) {
 
-    .login {
-        /* margin: 3rem !important; */
-        text-align: center;
-        
-    }
-    /* .login-id input, .login-pw input {
-        width: 70%;
-        margin-left: 15%;
-    } */
-    .login-btn {
-        width: 70%;
-       
-    }
+    
 }
 
 @media (min-width:992px) {
     
-    .login {
-        width: 579px;
-        
-    }
-    /* .login-id input, .login-pw input {
-        margin-left: 99px;
-    }    */
-    .login-btn {
-        width: 60%;
-        
-    }
+    
 }
 
