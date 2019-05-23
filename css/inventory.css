@@ -25,7 +25,7 @@ body {
 }
 
 .inven {
-    width: 1300px;
+    /* width: 100%; */
     background-color: white;
     border-radius: 40px;
     /* box-shadow: 0px 11px 48px 0 rgba(0, 0, 0, 0.05); */
@@ -147,12 +147,77 @@ input:focus::-ms-input-placeholder {
 } */
 
 
+@media (max-width: 576px) {
+    .inven {
+       margin-left: 10% !important;
+       margin-right: 10% !important;  
+    }
+
+    .inven-title {
+        font-size: 20px
+    }
+    .inven-me-title {
+        font-size: 15px
+    }
+    .inven-inst {
+        font-size: 12px;
+    }
+
+    .inven-me {
+        
+    }
+}
+
+@media (min-width: 576px) {
+    .inven {
+       margin-left: 10% !important;
+       margin-right: 10% !important;  
+    }
+
+    .inven-title {
+        font-size: 20px
+    }
+    .inven-me-title {
+        font-size: 15px
+    }
+    .inven-inst {
+        font-size: 12px;
+    }
+
+    .inven-me {
+        
+    }
+}
+
 @media (min-width: 786px){
 
     .inven{
-        width: 80%;
+        margin-left: 10% !important;
+       margin-right: 10% !important;  
     }
 
+    .inven-title {
+        font-size: 20px
+    }
+    .inven-me-title {
+        font-size: 15px
+    }
+    .inven-inst {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) {
+    
+    .inven-title {
+        font-size: 25px
+    }
+    .inven-me-title {
+        font-size: 20px
+    }
+    .inven-inst {
+        font-size: 20px;
+    }
 }
 
 

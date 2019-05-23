@@ -35,7 +35,7 @@ body {
 }
 
 .quiz {
-    width: 1000px;
+    
     background-color: white;
     border-radius: 30px;
     /* box-shadow: 0px 11px 48px 0 rgba(0, 0, 0, 0.05); */
@@ -142,4 +142,26 @@ input:focus::-ms-input-placeholder {
 table {
     margin-left: 100px;
     margin-top: 45px;
+}
+
+@media (max-width: 576px) {
+    .quiz {
+        margin-left: 10% !important;
+        margin-right: 10% !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .quiz {
+        margin-left: 10% !important;
+        margin-right: 10% !important;
+    }
+}
+
+@media (min-width: 786px) {
+    
+}
+
+@media (min-width: 992px) {
+    
 }
