@@ -35,7 +35,7 @@ body {
     background-color: rgba(255, 254, 252, 0.877);
     border-radius: 30px;
     box-shadow: 20px 20px 48px 0 rgba(0, 0, 0, 0.164);
-    margin:0 auto;
+    margin: auto;
     position: relative;
     padding-top: 45px;
     text-align: center;
@@ -126,3 +126,24 @@ input:focus::-ms-input-placeholder {
 }
 
 
+
+@media (min-width:576px) {
+    
+    .login {
+        /* margin: 3rem !important; */
+        width: 100%;
+    }
+}
+
+@media (min-width:768px) {
+
+    .login {
+        
+    }
+    
+}
+
+@media (min-width:992px) {
+    
+    
+}

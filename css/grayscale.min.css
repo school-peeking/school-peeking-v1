@@ -183,20 +183,24 @@
     font-size: 80%;
     text-transform: uppercase;
     letter-spacing: .15rem;
-    border: 0
+    border: 0;
+    
 }
 
 .btn-primary {
-    border: 2px solid #008158 !important
+    border: 2px solid #008158 !important;
+    background-color: #fff !important;
+    /* background-color: rgb(0,0,0,.2); */
 }
 
 .btn-primary:hover {
-    background-color: #008158
+    background-color: #00815854;
+    
 }
 
 .btn-primary:focus {
-    border: 2px solid #008158;
-    color: #fff
+    border: 2px solid #00815854;
+    color: #000
 }
 
 .btn-primary:active {

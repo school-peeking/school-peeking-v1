@@ -27,7 +27,7 @@ body {
 
 .masthead { /*main_image*/
     /* background: linear-gradient(to bottom,rgba(22, 22, 22, 0) 0,rgba(22, 22, 22, 0) 65%,#f8f9fa 100%),url(../img/main-img.HEIC) no-repeat center center;  */
-    background: linear-gradient(to bottom,rgba(22,22,22,.1) 0,rgba(22, 22, 22, 0) 75%,#16161600 100%),url(../img/main-img.HEIC) no-repeat;
+    background: linear-gradient(to bottom,rgba(22,22,22,.1) 0,rgba(22, 22, 22, 0) 75%,#16161600 100%),url(../img/main-img.png) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -35,6 +35,7 @@ body {
 }
 
 .main-title {
+
     text-shadow: 4px 2px 2px #8080808f;
 
     background: -webkit-linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255));
@@ -42,8 +43,9 @@ body {
 }
 
 .main-intro {
+    background-color: rgba(0,0,0,0.2);
     color: white;
-    -webkit-text-fill-color: #343a40;
+    -webkit-text-fill-color: #fff;
 }
 
 .text-white-50 {
@@ -88,7 +90,7 @@ body {
 }
 
 .signup-section {
-    background: linear-gradient(to bottom,rgba(22, 22, 22, 0) 0,rgba(22, 22, 22, 0) 75%,#16161600 100%), url(../img/main-img-cut.heic) no-repeat;
+    background: linear-gradient(to bottom,rgba(22, 22, 22, 0) 0,rgba(22, 22, 22, 0) 75%,#16161600 100%), url(../img/main-img-cut.png) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
