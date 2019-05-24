@@ -45,6 +45,7 @@ body {
     font-size: 25px;
     font-weight: 800;
     margin-top: 21px;
+    margin-bottom: 30px;
 }
 
 .login-inst {
@@ -61,6 +62,10 @@ body {
     font-family: serif;
 } 
 
+.login-id {
+    margin-bottom: 15px;
+}
+
  .login-id input, .login-pw input{
     width: 381px;
     height: 55px;
@@ -69,7 +74,6 @@ body {
     background-color: #fff;
     outline: none;
     padding-left: 20px;
-    margin-left: 99px;
     text-align: center;
    
 } 
@@ -94,7 +98,6 @@ body {
     outline: none;
     -webkit-appearance: none;
     padding: 0;
-    margin-left: 99px;
 }
 .login-btn:hover {
     background-color: #008158;
@@ -121,20 +124,40 @@ input:focus::-ms-input-placeholder {
     color: transparent; 
 }
 
-
-
-@media (min-width:576px) {
-    
-    
+@media (min-width: 1024px) {
+    .login-section {
+        margin-top: 500px !important;
+        margin-bottom: 440px !important;
+    }
 }
 
-@media (min-width:768px) {
-
-    
+@media (min-width: 768px) {
+    .login-section {
+        margin-top: 300px;
+        margin-bottom: 260px;
+    }
 }
 
-@media (min-width:992px) {
-    
-    
+@media (max-width:767px) {
+    .login {
+        width: 95%;
+        margin: 0 auto !important;
+        margin-bottom: 20px;
+    }
+    .login-id input, .login-pw input {
+        width: 90%;
+    }
+    .login-btn {
+        width: 90%;
+    }
+    .login-section {
+        margin-bottom: 150px;
+    }
 }
 
+@media (min-width: 1025px) {
+    .login-section {
+        margin-bottom: 0 !important;
+        margin-top: 200px !important;
+    }
+}
