@@ -19,7 +19,7 @@
   var Marzipano = window.Marzipano;
   var bowser = window.bowser;
   var screenfull = window.screenfull;
-  var data = APP_DATA;
+  var data = window.APP_DATA;
 
   // Grab elements from DOM.
   var panoElement = document.querySelector('#pano');
@@ -27,7 +27,7 @@
   var sceneListElement = document.querySelector('#sceneList');
   var sceneElements = document.querySelectorAll('#sceneList .scene');
   var sceneListToggleElement = document.querySelector('#sceneListToggle');
-  var autorotateToggleElement = document.querySelector('#autorotateToggle');
+  //var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
 
   // Detect desktop or mobile mode.
@@ -69,6 +69,26 @@
 
   // Initialize viewer.
   var viewer = new Marzipano.Viewer(panoElement, viewerOpts);
+  
+  /* 뭔가 있음*/
+
+  var pano = document.getElementById("pano");
+
+pano.addEventListener("click", function (e) {
+    
+    
+    var view = viewer.view();
+    var loc  = view.screenToCoordinates({x : e.clientX, y: e.clientY});
+    var position = { yaw: loc.yaw, pitch: loc.pitch};
+    
+    console.log(view.screenToCoordinates({x : e.clientX, y: e.clientY}));
+    console.log(view.yaw + " - " + view.pitch);
+    
+})
+
+/*뭔가 있음의 끝 */
+
+
 
   // Create scenes.
   var scenes = data.scenes.map(function(data) {
@@ -80,6 +100,7 @@
 
     var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
     var view = new Marzipano.RectilinearView(data.initialViewParameters, limiter);
+    
 
     var scene = viewer.createScene({
       source: source,
@@ -108,17 +129,17 @@
   });
 
   // Set up autorotate, if enabled.
-  var autorotate = Marzipano.autorotate({
-    yawSpeed: 0.03,
-    targetPitch: 0,
-    targetFov: Math.PI/2
-  });
-  if (data.settings.autorotateEnabled) {
-    autorotateToggleElement.classList.add('enabled');
-  }
+  // var autorotate = Marzipano.autorotate({
+  //   yawSpeed: 0.03,
+  //   targetPitch: 0,
+  //   targetFov: Math.PI/2
+  // });
+  // if (data.settings.autorotateEnabled) {
+  //   autorotateToggleElement.classList.add('enabled');
+  // }
 
-  // Set handler for autorotate toggle.
-  autorotateToggleElement.addEventListener('click', toggleAutorotate);
+  // // Set handler for autorotate toggle.
+  // autorotateToggleElement.addEventListener('click', toggleAutorotate);
 
   // Set up fullscreen mode, if supported.
   if (screenfull.enabled && data.settings.fullscreenButton) {
@@ -147,7 +168,6 @@
 
   // Set handler for scene switch.
   scenes.forEach(function(scene) {
-    console.log(scene.data.id);
     var el = document.querySelector('#sceneList .scene[data-id="' + scene.data.id + '"]');
     el.addEventListener('click', function() {
       switchScene(scene);
@@ -184,10 +204,10 @@
   }
 
   function switchScene(scene) {
-    stopAutorotate();
+    // stopAutorotate();
     scene.view.setParameters(scene.data.initialViewParameters);
     scene.scene.switchTo();
-    startAutorotate();
+    // startAutorotate();
     updateSceneName(scene);
     updateSceneList(scene);
   }
@@ -222,28 +242,28 @@
     sceneListToggleElement.classList.toggle('enabled');
   }
 
-  function startAutorotate() {
-    if (!autorotateToggleElement.classList.contains('enabled')) {
-      return;
-    }
-    viewer.startMovement(autorotate);
-    viewer.setIdleMovement(3000, autorotate);
-  }
+  // function startAutorotate() {
+  //   if (!autorotateToggleElement.classList.contains('enabled')) {
+  //     return;
+  //   }
+  //   viewer.startMovement(autorotate);
+  //   viewer.setIdleMovement(3000, autorotate);
+  // }
 
-  function stopAutorotate() {
-    viewer.stopMovement();
-    viewer.setIdleMovement(Infinity);
-  }
+  // function stopAutorotate() {
+  //   viewer.stopMovement();
+  //   viewer.setIdleMovement(Infinity);
+  // }
 
-  function toggleAutorotate() {
-    if (autorotateToggleElement.classList.contains('enabled')) {
-      autorotateToggleElement.classList.remove('enabled');
-      stopAutorotate();
-    } else {
-      autorotateToggleElement.classList.add('enabled');
-      startAutorotate();
-    }
-  }
+  // function toggleAutorotate() {
+  //   if (autorotateToggleElement.classList.contains('enabled')) {
+  //     autorotateToggleElement.classList.remove('enabled');
+  //     stopAutorotate();
+  //   } else {
+  //     autorotateToggleElement.classList.add('enabled');
+  //     startAutorotate();
+  //   }
+  // }
 
   function createLinkHotspotElement(hotspot) {
 
@@ -381,7 +401,6 @@
   function findSceneDataById(id) {
     for (var i = 0; i < data.scenes.length; i++) {
       if (data.scenes[i].id === id) {
-        console.log(data.scenes[i].id + " " + id + " " + i);
         return data.scenes[i];
       }
     }
