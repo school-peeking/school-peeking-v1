@@ -22,7 +22,7 @@ html, body {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  font-family: 'NanumSquareRound';
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   background-color: #000;
   color: #fff;
@@ -32,6 +32,7 @@ a, a:hover, a:active, a:visited {
   text-decoration: none;
   color: inherit;
 }
+
 
 #pano {
   position: absolute;
@@ -46,14 +47,14 @@ a, a:hover, a:active, a:visited {
   position: absolute;
   top: 0;
   left: 0;
-  right: 40px;
+  right: 0;
   height: 40px;
   text-align: center;
 }
 
 .mobile #titleBar {
   height: 50px;
-  right: 50px;
+  /* right: 50px; */
 }
 
 /* If there is a fullscreen button the title bar must make space for it */
@@ -79,8 +80,9 @@ body.multiple-scenes.mobile #titleBar {
   height: 100%;
   line-height: 30px;
   padding: 5px;
-  background-color: rgb(58,68,84);
-  background-color: rgba(81, 126, 122);
+  background-color: rgba(103,115,131);
+  /* background-color: rgb(58,68,84);
+  background-color: rgba(58,68,84,0.8); */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -104,8 +106,14 @@ body.multiple-scenes.mobile #titleBar {
   height: 40px;
   padding: 5px;
   background-color: rgb(103,115,131);
-  background-color: rgba(103,115,131,0.8);
+  /* background-color: rgba(103,115,131,0.8); */
 }
+
+.displays {
+  display: none;
+}
+
+
 
 .mobile #fullscreenToggle {
   width: 50px;
@@ -208,7 +216,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   height: 40px;
   padding: 5px;
   background-color: rgb(103,115,131);
-  background-color: rgba(103,115,131,0.8);
+  /* background-color: rgba(103,115,131,0.8); */
 }
 
 .mobile #sceneListToggle {
@@ -265,32 +273,27 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   margin-left: 0;
   -webkit-transition: margin-left 0.5s ease-in-out;
   transition: margin-left 0.5s ease-in-out;
-
-  
-}
-
-::-webkit-scrollbar {
-  width: 0px;  /* remove scrollbar space */
-  background: transparent;  /* optional: just make scrollbar invisible */
-}
-/* optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-  background: #FF0000;
 }
 
 .mobile #sceneList {
   padding-top: 50px;
 }
 
+::-webkit-scrollbar {
+
+  display:none;
+  
+  }
+
 #sceneList .scenes {
   width: 100%;
   background-color: rgb(58,68,84);
-  background-color: rgba(81, 126, 122, 0.82);
+  background-color: rgba(58,68,84,0.8);
 }
 
 .mobile #sceneList {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   left: -100%;
 }
 
@@ -299,7 +302,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 }
 
 .mobile #sceneList .scenes {
-  /* height: 100%; */
+  height: 100%;
 }
 
 #sceneList.enabled {
@@ -332,12 +335,12 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 
 .no-touch #sceneList .scene:hover {
   background-color: rgb(103,115,131);
-  background-color: rgba(47, 72, 53, 0.45);
+  background-color: rgba(103,115,131,0.8);
 }
 
 #sceneList .scene.current {
   background-color: rgb(103,115,131);
-  background-color: rgba(47, 72, 53, 0.45);
+  background-color: rgba(103,115,131,0.8);
 }
 
 /* Hide scene list when only a single scene exists */
@@ -489,7 +492,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
 .desktop .info-hotspot.visible .info-hotspot-header,
 .desktop.no-touch .info-hotspot.visible .info-hotspot-header:hover {
-  width: 260px;
+  width: 300px;
   border-radius: 5px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -532,7 +535,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
 .desktop .info-hotspot.visible .info-hotspot-title-wrapper,
 .desktop.no-touch .info-hotspot .info-hotspot-header:hover .info-hotspot-title-wrapper {
-  width: 220px;
+  width: 260px;
   padding: 0 5px;
   -webkit-transition: width 0s 0.4s,
                       padding 0s 0.4s;
@@ -559,7 +562,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
 .info-hotspot .info-hotspot-close-wrapper {
   position: absolute;
-  left: 260px;
+  left: 300px;
   top: 0;
   height: 40px;
   width: 40px;
@@ -605,7 +608,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
 .info-hotspot .info-hotspot-text {
   position: absolute;
-  width: 300px;
+  width: 340px;
   height: auto;
   max-height: 200px;
   top: 40px;
@@ -688,7 +691,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
 .info-hotspot-modal .info-hotspot-header {
   position: absolute;
-  top: 60px;
+  top: 80px;
   left: 10px;
   right: 10px;
   width: auto;
@@ -763,8 +766,8 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
 .info-hotspot-modal .info-hotspot-text {
   position: absolute;
-  top: 110px;
-  bottom: 10px;
+  top: 130px;
+  bottom: auto;
   left: 10px;
   right: 10px;
   padding: 10px;
