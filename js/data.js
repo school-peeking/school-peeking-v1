@@ -2254,7 +2254,7 @@ var APP_DATA = {
           "yaw": -0.9639193003717317,
           "pitch": -0.19569318277381242,
           "title": "1-2",
-          "text": "학과 : 뉴미디어소프트웨어과 <br><br> 담임 : 박지우 선생님"
+          "text": "학과 : 뉴미디어소프트웨어과 <br><br> 담임 : 박지우 선생님 <br><br>관련 <a href='quiz-view.html?id=5' style='color: yellow '>[ 퀴즈 ]</a> 를 풀어보세요 🙂"
         },
         {
           "yaw": 2.730319943620265,
@@ -2463,7 +2463,7 @@ var APP_DATA = {
           "yaw": -1.0306692772556119,
           "pitch": -0.11437093743303706,
           "title": "기사실",
-          "text": "Text"
+          "text": "장기사님이 계시는 곳입니다. <br><br>관련 <a href='quiz-view.html?id=7' style='color: yellow '>[ 퀴즈 ]</a> 를 풀어보세요 🙂"
         }
       ]
     },
