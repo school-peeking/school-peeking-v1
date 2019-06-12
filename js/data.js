@@ -2203,7 +2203,7 @@ var APP_DATA = {
           "yaw": 2.4593709126531085,
           "pitch": -0.1651618007966995,
           "title": "1-6",
-          "text": "학과 : 뉴미디어디자인과 <br><br> 담임 : 김민혜 선생님"
+          "text": "학과 : 뉴미디어디자인과 <br><br> 담임 : 김민혜 선생님<br><br>관련 <a href='quiz-view.html?id=6' style='color: yellow '>[ 퀴즈 ]</a> 를 풀어보세요 🙂"
         }
       ]
     },
@@ -4359,7 +4359,7 @@ var APP_DATA = {
           "yaw": 2.746307701480432,
           "pitch": -0.13249943223754634,
           "title": "게임메이커반",
-          "text": "Text"
+          "text": "관련<a href='quiz-view.html?id=4' style='color: yellow '>[ 퀴즈 ] ]</a> 를 풀어보세요 🙂"
         }
       ]
     },
