@@ -286,6 +286,10 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   
   }
 
+.info-hotspot-text {
+  overflow-y: scroll;
+}
+
 #sceneList .scenes {
   width: 100%;
   background-color: rgb(58,68,84);

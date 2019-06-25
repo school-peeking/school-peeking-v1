@@ -39,6 +39,7 @@ body {
     position: relative;
     padding-top: 45px;
     text-align: center !important;
+    
 }
 
 .login-title {
@@ -58,9 +59,9 @@ body {
     margin-left: 110px;
 }
 
- .login-pw input{
+ /* .login-pw input{
     font-family: serif;
-} 
+}  */
 
 .login-id {
     margin-bottom: 15px;
@@ -75,12 +76,14 @@ body {
     outline: none;
     padding-left: 20px;
     /* text-align: center; */
+    letter-spacing: .0625em;
    
 } 
 
 
 .login-id input:hover, .login-pw input:hover {
     border: solid 2px #008158;
+    
 }
 
 .login-btn {
@@ -98,6 +101,9 @@ body {
     outline: none;
     -webkit-appearance: none;
     padding: 0;
+
+    letter-spacing: .0625em;
+
 }
 .login-btn:hover {
     background-color: #008158;
