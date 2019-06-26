@@ -7,7 +7,7 @@ var sort_coupon = [];
 
 var chk = 0;
 
-var clud_name = ['기본인증서', '알파반', '앱앤미', '게임메이커'];
+// var clud_name = ['기본인증서', '알파반', '앱앤미', '게임메이커'];
 
 function userSessionCheck_leader(param) {
     console.log("gg");

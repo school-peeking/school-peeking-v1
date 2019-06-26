@@ -60,7 +60,8 @@ function quizList() {
             var exams = dataList[qparam].exam;
             var exam = "";
 
-            for(var i = 0; i < exams.length; i++) {
+            //0이 아닌 1로 수정
+            for(var i = 1; i < exams.length+1; i++) {
                 exam += "<li class='quiz-li' onclick='qcheck(" + (i+1) + ")'>" + exams[i] +"</li>";
             }
 
