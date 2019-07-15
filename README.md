@@ -81,5 +81,5 @@ https://rodeview-tmp.firebaseapp.com
 > _랭킹_
 
 > * 관리자(동아리 부장) 화면
-> ![정답자 리스트(https://user-images.githubusercontent.com/40289200/61231834-e1023880-a767-11e9-9d54-8194b8163b97.PNG)
->
+> ![정답자 리스트](https://user-images.githubusercontent.com/40289200/61231834-e1023880-a767-11e9-9d54-8194b8163b97.PNG)
+> _정답자 리스트(동아리 관리자)_
