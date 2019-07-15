@@ -1,6 +1,6 @@
 # 첫 등교는 IP로!
 
-> [site link]: https://rodeview-tmp.firebaseapp.com 
+[site link]: https://rodeview-tmp.firebaseapp.com "첫 등교는 IP로!"
 
 ## 수상 및 공식 이력
 
@@ -20,9 +20,5 @@
 
 ## Feature
 
+![Alt text](/path/to/img.jpg)
 
-
-
-## Contact
-
-Yebin Kim - girincute@gmail.com
