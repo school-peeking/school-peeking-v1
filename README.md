@@ -15,7 +15,7 @@ https://rodeview-tmp.firebaseapp.com
 
 * VanillaJS
 * bootstrap
-* Marzipano api
+* [Marzipano api](https://www.marzipano.net/)
 * node.js
 * Firebase(Hosting, realtime database)
 
